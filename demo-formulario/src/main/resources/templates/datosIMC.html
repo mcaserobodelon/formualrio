@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DatosIMC</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<script src="js/jquery-1.4.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+	<script src="js/jquery-func.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="page" class="shell">
+	<h1>Resultado del IMC</h1> <br>
+    <fieldset>
+        <legend><h2>Los resultado del IMC dados:</h2></legend>
+
+        <h3 class="notext txt-247">Peso:</h3>
+        <p th:text=${peso_form}></p>
+        
+        <h3>Estatura:</h3>
+        <p th:text=${estatura_form}></p>
+        
+		<h3>sexo:</h3>
+        <p th:text=${sex_form}></p>
+        
+        <h3>IMC:</h3>
+        <p th:text=${solc_form}></p>
+        
+        <h3>frase:</h3>
+        <p th:text=${frase_form}></p>
+        
+    </fieldset>
+</div>
+    
+    
+</body>
+</html>

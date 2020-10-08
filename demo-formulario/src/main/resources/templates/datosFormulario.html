@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<script src="js/jquery-1.4.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+	<script src="js/jquery-func.js" type="text/javascript"></script>
+</head>
+<body>
+    <h1>Resultado de el formulario</h1> 
+    <fieldset>
+        <legend><h2>Datos personales:</h2></legend>
+        
+        <h3>Nombre:</h3>
+        <p th:text=${nombre_form}></p>
+        
+        <h3>Primer apellido:</h3>
+        <p th:text=${apellido1_form}></p>
+        
+        <h3>Segundo apellido:</h3>
+        <p th:text=${apellido2_form}></p>
+        
+        <h3>Correo electrónico:</h3>
+        <p th:text=${email_form}></p>
+        
+        <h3>Fecha de nacimiento:</h3>
+        <dfn th:text=${dia_form}></dfn>
+        <dfn>del</dfn>
+        <dfn th:text=${mes_form}></dfn>
+        <dfn>de</dfn>
+        <dfn th:text=${anio_form}></dfn><br>
+        
+        <h3>Contraseña:</h3>
+        <p th:text=${pwd_form}></p>
+        
+        <h3>Sexo:</h3>
+        <p th:if="${sex_form == 'h'}" th:text="Hombre"></p>
+        <p th:if="${sex_form == 'm'}" th:text="Mujer"></p>
+        
+        <h3>Dirección:</h3>
+        <p th:text=${dirc_form}></p>
+    </fieldset>
+    
+    <fieldset>
+    	<legend><h2>Nivel de estudios e intereses:</h2></legend>
+    	
+    	<h3>Estudios:</h3>
+    	<p th:text=${std_form}></p>
+    	
+    	<h3>Le interesan los siguientes temas:</h3>
+    	<p th:text=${artMus_form}></p>
+    	<p th:text=${artDep_form}></p>
+    	<p th:text=${artCin_form}></p>
+    	<p th:text=${artLib_form}></p>
+    	<p th:text=${artCie_form}></p>
+
+    </fieldset>
+</body>
+</html>
